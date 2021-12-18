@@ -5,7 +5,8 @@ endif
 
 " The path to the binary
 " It was created out of `cargo build --release`
-let s:bin = '/Users/hh/Projects/personal/neovim-plugin-sample-by-rust/target/release/neovim-plugin-sample-by-rust'
+let s:scriptdir = resolve(expand('<sfile>:p:h') . '/..')
+let s:bin = s:scriptdir . '/target/release/neovim-plugin-sample-by-rust'
 
 " Constants for RPC messages
 let s:Add = 'add'
